@@ -18,9 +18,9 @@ interface NavLinkProps {
 
 function NavLink({ to, children }: NavLinkProps) {
   return (
-    <a href={to} className={`mx-4`}>
+    <Link href={to} className={`mx-4`}>
       {children}
-    </a>
+    </Link>
   );
 }
 
@@ -39,7 +39,7 @@ function MobileNav({ open, setOpen }: MobileNavProps) {
         </Link>
       </div>
       <div className="ml-4 flex flex-col">
-        <a
+        <Link
           className="my-4 text-xl font-medium"
           href="/animation"
           onClick={() =>
@@ -49,8 +49,8 @@ function MobileNav({ open, setOpen }: MobileNavProps) {
           }
         >
           Translate
-        </a>
-        <a
+        </Link>
+        <Link
           className="my-4 text-xl font-medium"
           href="/about"
           onClick={() =>
@@ -60,8 +60,8 @@ function MobileNav({ open, setOpen }: MobileNavProps) {
           }
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           className="my-4 text-xl font-medium"
           href="/contact"
           onClick={() =>
@@ -71,7 +71,7 @@ function MobileNav({ open, setOpen }: MobileNavProps) {
           }
         >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );
